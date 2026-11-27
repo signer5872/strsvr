@@ -1,0 +1,177 @@
+[set]
+; ===== GLOBAL SETTINGS =====
+; UI language: en = English, zh = Chinese (also Ctrl+L / right-click menu)
+language=en
+input=0            ; Input stream selector (reserved)
+output1=0          ; Output 1 selector
+output2=0          ; Output 2 selector
+output3=0          ; Output 3 selector
+tracelevel=2       ; Log/trace level: 0=verbose 1=debug 2=info 3=warn 4=error
+nmeareq=2          ; NMEA request mode
+fswapmargin=30     ; Frequency swap margin (Hz)
+relayback=0        ; Relay back mode
+progbarrange=2000  ; Progress bar range
+staid=0            ; Station ID
+stasel=0           ; Station selection
+anttype=           ; Antenna type
+rcvtype=           ; Receiver type
+
+; Server options (matching original strsvr defaults)
+svropt_0=10000
+svropt_1=10000
+svropt_2=1000
+svropt_3=32768
+svropt_4=10
+svropt_5=0
+
+; Antenna positions and offsets for up to 3 antennas
+antpos_0=0
+antoff_0=0
+antpos_1=0
+antoff_1=0
+antpos_2=0
+antoff_2=0
+
+; ===== RTCM DATA RECORDING =====
+; Save the differential data distributed to the outputs as <UTC date>.rtcm3
+; (e.g. 20261124.rtcm3). A new file is created when the UTC date changes.
+; recordena: 1 = record, 0 = off
+; recorddir: output directory (empty = program working directory)
+recordena=0
+recorddir=
+
+[conv]
+; ===== DATA CONVERSION SETTINGS (up to 3 converters) =====
+; ena_N : enable flag (0/1)
+; inp_N : input channel
+; out_N : output channel
+; msg_N : message template
+; opt_N : conversion options
+ena_0=0
+inp_0=0
+out_0=0
+msg_0=
+opt_0=
+ena_1=0
+inp_1=0
+out_1=0
+msg_1=
+opt_1=
+ena_2=0
+inp_2=0
+out_2=0
+msg_2=
+opt_2=
+
+[serial]
+; ===== SERIAL PORT COMMANDS =====
+; cmdena_N_M : enable command M on port N (0/1)
+; cmd_N_M    : command string (sent at startup)
+cmdena_0_0=1
+cmdena_0_1=1
+cmdena_0_2=1
+cmdena_1_0=1
+cmdena_1_1=1
+cmdena_1_2=1
+cmdena_2_0=1
+cmdena_2_1=1
+cmdena_2_2=1
+cmdena_3_0=1
+cmdena_3_1=1
+cmdena_3_2=1
+cmd_0_0=
+cmd_0_1=
+cmd_0_2=
+cmd_1_0=
+cmd_1_1=
+cmd_1_2=
+cmd_2_0=
+cmd_2_1=
+cmd_2_2=
+cmd_3_0=
+cmd_3_1=
+cmd_3_2=
+
+[tcpip]
+; ===== TCP/IP COMMANDS =====
+cmdena_0_0=1
+cmdena_0_1=1
+cmdena_0_2=1
+cmdena_1_0=1
+cmdena_1_1=1
+cmdena_1_2=1
+cmdena_2_0=1
+cmdena_2_1=1
+cmdena_2_2=1
+cmdena_3_0=1
+cmdena_3_1=1
+cmdena_3_2=1
+cmd_0_0=
+cmd_0_1=
+cmd_0_2=
+cmd_1_0=
+cmd_1_1=
+cmd_1_2=
+cmd_2_0=
+cmd_2_1=
+cmd_2_2=
+cmd_3_0=
+cmd_3_1=
+cmd_3_2=
+
+[path]
+; ===== PATH CONFIGURATION (4 paths x 4 options) =====
+path_0_0=
+path_0_1=
+path_0_2=
+path_0_3=
+path_1_0=
+path_1_1=
+path_1_2=
+path_1_3=
+path_2_0=
+path_2_1=
+path_2_2=
+path_2_3=
+path_3_0=
+path_3_1=
+path_3_2=
+path_3_3=
+
+[tcpopt]
+; ===== TCP OPTIONS / CONNECTION HISTORY =====
+history0=
+history1=
+history2=
+history3=
+history4=
+history5=
+history6=
+history7=
+history8=
+history9=
+mntphist0=
+mntphist1=
+mntphist2=
+mntphist3=
+mntphist4=
+mntphist5=
+mntphist6=
+mntphist7=
+mntphist8=
+mntphist9=
+
+[stapos]
+; ===== STATION POSITION FILE =====
+staposfile=
+
+[dirs]
+; ===== DIRECTORY CONFIGURATION =====
+exedirectory=
+localdirectory=
+proxyaddress=
+
+[file]
+; ===== FILE PATHS =====
+srctblfile=
+logfile=strsvr.log
